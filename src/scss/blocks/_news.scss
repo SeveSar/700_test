@@ -1,0 +1,48 @@
+.news {
+  padding: 11rem 0;
+
+  &__title {
+    margin-bottom: 2.5rem;
+  }
+
+  &__slider {
+    @media screen and (max-width: $sm) {
+      margin: 0 -2rem;
+      padding: 0 2rem;
+    }
+    .swiper-wrapper {
+      @media screen and (min-width: $sm) {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(20rem, 1fr));
+        gap: 5rem 2rem;
+      }
+      @media screen and (min-width: $sm) and (max-width: $lg) {
+        grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+      }
+    }
+  }
+
+  &__card {
+    color: $white;
+    @media screen and (min-width: $sm) {
+      width: auto;
+      height: auto;
+    }
+
+    &-img {
+      position: relative;
+      padding-bottom: calc((26.4rem / 40rem) * 100%);
+      margin-bottom: 3rem;
+    }
+
+    &-title {
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    &-text {
+      font-size: 1.4rem;
+    }
+  }
+}

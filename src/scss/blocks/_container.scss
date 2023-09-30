@@ -1,0 +1,10 @@
+.container {
+  max-width: 128rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @media screen and (max-width: $sm) {
+    padding: 0 1.5rem;
+  }
+}
